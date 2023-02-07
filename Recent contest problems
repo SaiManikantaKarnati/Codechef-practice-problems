@@ -1,0 +1,9 @@
+#Recent contest problems
+
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    lst = [str(j) for j in input().split()][:n]
+    cnt_start = lst.count("START38")
+    cnt_ltime = lst.count("LTIME108")
+    print(cnt_start,cnt_ltime)
