@@ -1,0 +1,14 @@
+# Rearranging digits to get a multiple of 5
+
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    string = input()
+    flag=0
+    for i in string:
+        if i=='0' or i=='5':
+            flag=1
+            print("Yes")
+            break
+    if flag==0:
+        print("No")
