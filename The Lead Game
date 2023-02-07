@@ -1,0 +1,22 @@
+# The lead game
+
+n = int(input())
+a,b=0,0
+x,y=0,0
+lead1,lead2=0,0
+for i in range(n):
+    player1, player2 = map(int,input().split())
+    a += player1
+    b += player2
+    if a>=b:
+        x = a-b
+    if a<b:
+        y = b-a
+    if(lead1 < x):
+        lead1 = x
+    if(lead2 < y):
+        lead2 = y
+if(lead1 < lead2):
+    print(2,lead2)
+else:
+    print(1,lead1)
