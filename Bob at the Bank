@@ -1,0 +1,9 @@
+# Bob at the Bank
+
+testcases = int(input())
+for i in range(testcases):
+    W,X,Y,Z = list(map(int,input().split()))
+    if X>Y:
+        print(W+(X-Y)*Z)
+    else:
+        print(W+(X-Y)*Z)
