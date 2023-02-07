@@ -1,0 +1,16 @@
+# Chef and happy string
+
+cases = int(input())
+vowels = "aeiou"
+for i in range(cases):
+    string = input().strip()
+    flag = 0
+    
+    for i in range(len(string)):
+        if(string[i] in vowels) and (string[i+1] in vowels) and (string[i+2] in vowels):
+            flag = 1
+            break
+    if(flag == 0):
+        print("Sad")
+    else:
+        print("Happy")
