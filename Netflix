@@ -1,0 +1,11 @@
+# Netflix
+# This question is from February cookoff 2023 from codechef
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    a,b,c,x = map(int,input().split())
+    if a+b>=x or b+c>=x or c+a>=x:
+        print("YES")
+    else:
+        print("NO")
