@@ -1,0 +1,21 @@
+# Take not less
+# This question is from February cook-off 2023 codechef
+
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    mydict = {}
+    arr = list(map(int,input().split()))
+    arr.sort(reverse=True)
+    for j in arr:
+        mydict.setdefault(j,0)
+        mydict[j] += 1
+    flag=1
+    for j in mydict.values():
+        if j%2:
+            flag=0
+            break
+    if flag:
+        print("Zenyk")
+    else:
+        print("Marichka")
