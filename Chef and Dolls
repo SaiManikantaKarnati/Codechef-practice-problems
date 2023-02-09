@@ -1,0 +1,13 @@
+#Chef and Dolls
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    types = []
+    for j in range(n):
+       types.append(int(input()))
+    for j in types:
+        if types.count(j)%2==1:
+            print(j)
+            break
