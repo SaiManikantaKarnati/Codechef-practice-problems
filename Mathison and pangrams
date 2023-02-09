@@ -1,0 +1,13 @@
+#Mathison and pangrams
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    n = list(map(int,input().split()))
+    string = input()
+    lines = 0
+    lst = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    for i in range(len(lst)):
+        if lst[i] not in string:
+            lines = lines + n[i]
+    print(lines)
