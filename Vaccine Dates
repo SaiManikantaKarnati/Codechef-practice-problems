@@ -1,0 +1,12 @@
+# Vaccine Dates
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    d,l,r = map(int,input().split())
+    if(d<l):
+        print("Too Early")
+    if(d>r):
+        print("Too Late")
+    if(d>=l and d<=r):
+        print("Take second dose now")
