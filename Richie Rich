@@ -1,0 +1,8 @@
+# Richie Rich
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    a,b,c = map(int,input().split())
+    ans = (b-a)//c
+    print(ans)
