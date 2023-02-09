@@ -1,0 +1,8 @@
+# Hoop Jump
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    ans = n//2 + 1
+    print(ans)
