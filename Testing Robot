@@ -1,0 +1,16 @@
+# Testing Robot
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    n,x = map(int,input().split())
+    s = input()
+    ans = [x]
+    for j in s:
+        if j == 'R':
+            x = x + 1
+        else:
+            x = x - 1
+        ans.append(x)
+    s = set(ans)
+    print(len(s))
