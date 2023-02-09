@@ -1,0 +1,10 @@
+#Make all equal using Pairs
+
+# cook your dish here
+from collections import Counter
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    arr = list(map(int,input().split()))[:n]
+    result = n-max(Counter(arr).values())
+    print(result)
