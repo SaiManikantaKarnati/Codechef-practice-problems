@@ -1,0 +1,14 @@
+# Wordle
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    s = list(input())
+    t = list(input())
+    ans=""
+    for j in range(len(s)):
+        if s[j] == t[j]:
+            ans = ans + 'G'
+        else:
+            ans = ans + 'B'
+    print(ans)
