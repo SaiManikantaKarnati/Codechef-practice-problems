@@ -1,0 +1,12 @@
+# The Cheaper Cab
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    a,b = map(int,input().split())
+    if a>b:
+        print("SECOND")
+    elif a==b:
+        print("ANY")
+    else:
+        print("FIRST")
