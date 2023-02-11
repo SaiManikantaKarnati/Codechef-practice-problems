@@ -1,0 +1,13 @@
+# Chef and Table Tennis
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    string = input()
+    n = len(string)
+    ones = string.count('1')
+    zeroes = string.count('0')
+    if ones>zeroes:
+        print("WIN")
+    else:
+        print("LOSE")
