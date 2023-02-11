@@ -1,0 +1,14 @@
+# Volume Control
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    x,y = map(int,input().split())
+    result=0
+    if x > y:
+        result = x - y
+    elif y > x:
+        result = y - x
+    else:
+        result = 0
+    print(result)
