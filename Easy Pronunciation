@@ -1,0 +1,21 @@
+# Easy Pronunciation
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    string = input()
+    vowels = ['a','e','i','o','u']
+    flag,count=0,0
+    for i in string:
+        if i not in vowels:
+            count = count + 1
+        else:
+            count = 0
+        if count>=4:
+            flag = 1
+    if flag:
+        print("NO")
+    else:
+        print("YES")
+        
