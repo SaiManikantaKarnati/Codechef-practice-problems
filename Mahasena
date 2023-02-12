@@ -1,0 +1,16 @@
+# Mahasena
+
+# cook your dish here
+n = int(input())
+arr = list(map(int,input().split()))
+odd_cnt=0
+even_cnt=0
+for i in arr:
+    if i%2==0:
+        even_cnt = even_cnt + 1
+    if i%2!=0:
+        odd_cnt = odd_cnt + 1
+if even_cnt>odd_cnt:
+    print("READY FOR BATTLE")
+else:
+    print("NOT READY")
