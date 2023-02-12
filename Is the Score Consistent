@@ -1,0 +1,11 @@
+# Is the Score Consistent
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    a,b = map(int,input().split())
+    c,d = map(int,input().split())
+    if a<=c and b<=d:
+        print("POSSIBLE")
+    else:
+        print("IMPOSSIBLE")
