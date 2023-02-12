@@ -1,0 +1,7 @@
+# Discus Throw
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    a,b,c = map(int,input().split())
+    print(max(a,b,c))
