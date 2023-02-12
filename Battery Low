@@ -1,0 +1,10 @@
+# Battery Low
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    battery = int(input())
+    if battery<=15:
+        print("YES")
+    else:
+        print("NO")
