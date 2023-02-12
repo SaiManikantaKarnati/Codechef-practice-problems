@@ -1,0 +1,17 @@
+# Candies
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    arr = list(map(int,input().split()))
+    flag=0
+    for i in range(2*n):
+        if arr.count(arr[i])>2:
+            flag=1
+            break
+    if(flag==1):
+        print("NO")
+    else:
+        print("YES")
+    
