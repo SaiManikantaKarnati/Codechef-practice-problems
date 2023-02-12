@@ -1,0 +1,10 @@
+# Miami GP
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x,y = map(int,input().split())
+    if x*107 >= y*100:
+        print("YES")
+    else:
+        print("NO")
