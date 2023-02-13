@@ -1,0 +1,13 @@
+# Weight Balance
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    w1,w2,x1,x2,m = map(int,input().split())
+    difference = w2-w1
+    x1 *= m
+    x2 *= m
+    if x1 <= difference <= x2:
+        print("1")
+    else:
+        print("0")
