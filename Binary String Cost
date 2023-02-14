@@ -1,0 +1,14 @@
+# Binary String Cost
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    n,x,y = map(int,input().split())
+    string = input()
+    if len(set(string)) == 1:
+        print(0)
+    else:
+        if x>y:
+            print(y)
+        else:
+            print(x)
