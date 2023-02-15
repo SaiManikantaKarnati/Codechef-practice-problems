@@ -1,0 +1,9 @@
+# Codechef Airlines
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x,y,z = map(int,input().split())
+    passengers = min(y,10*x)
+    amt = passengers*z
+    print(amt)
