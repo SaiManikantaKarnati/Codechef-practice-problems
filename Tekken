@@ -1,0 +1,21 @@
+# Tekken
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    a,b,c = map(int,input().split())
+    hel = min(b,c)
+    b = b - hel
+    c = c - hel
+    
+    hel = min(a,c)
+    a = a - hel
+    c = c - hel
+    
+    hel = min(a,b)
+    a = a - hel
+    b = b - hel
+    if(a>0):
+        print("YES")
+    else:
+        print("NO")
