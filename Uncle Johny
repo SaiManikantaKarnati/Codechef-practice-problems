@@ -1,0 +1,14 @@
+# Uncle Johny
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    arr =list(map(int,input().split()))
+    k = int(input())
+    a = 0
+    x = arr[k-1]
+    for i in range(len(arr)):
+        if(x > arr[i]):
+            a += 1
+    print(a+1)
