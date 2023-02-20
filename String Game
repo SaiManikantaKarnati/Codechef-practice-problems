@@ -1,0 +1,20 @@
+# String Game
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    s = list(input())
+    myset = set(s)
+    if n%2 == 1:
+        print("No")
+    else:
+        flag = False
+        for i in myset:
+            if s.count(i)%2 == 1:
+                flag = True
+                break
+        if flag:
+            print("No")
+        else:
+            print("Yes")
