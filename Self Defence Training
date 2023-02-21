@@ -1,0 +1,12 @@
+# Self Defence Training
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x = int(input())
+    arr = list(map(int,input().split()))
+    count = 0
+    for i in arr:
+        if i>=10 and i<=60:
+            count += 1
+    print(count)
