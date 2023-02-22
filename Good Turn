@@ -1,0 +1,10 @@
+# Good Turn
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x,y = map(int,input().split())
+    if x+y>6:
+        print("Yes")
+    else:
+        print("No")
