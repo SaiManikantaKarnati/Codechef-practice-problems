@@ -1,0 +1,14 @@
+# ICPC Balloons
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    arr = list(map(int,input().split()))
+    count = 0
+    for i in range(n):
+        if arr[i] <= 7:
+            count += 1
+        if count == 7:
+            print(i+1)
+            break
