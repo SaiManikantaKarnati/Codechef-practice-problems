@@ -1,0 +1,12 @@
+# Chef and Feedback
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    s = input()
+    if '010' in s:
+        print("Good")
+    elif '101' in s:
+        print("Good")
+    else:
+        print("Bad")
