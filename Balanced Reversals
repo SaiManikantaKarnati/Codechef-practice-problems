@@ -1,0 +1,11 @@
+# Balanced Reversals
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    s = input()
+    zeroes = s.count('0')
+    ones = s.count('1')
+    res = '0'*zeroes+'1'*ones
+    print(res)
