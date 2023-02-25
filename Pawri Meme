@@ -1,0 +1,12 @@
+# Pawri Meme
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    s = input()
+    word = 'party'
+    if word in s:
+        res = s.replace('party','pawri')
+        print(res)
+    else:
+        print(s)
