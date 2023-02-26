@@ -1,0 +1,13 @@
+# Palindrome Flipping
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    binary = input()
+    zeroes = binary.count('0')
+    ones = binary.count('1')
+    if zeroes%2 != 0 and ones%2 != 0:
+        print("No")
+    else:
+        print("Yes")
