@@ -1,0 +1,10 @@
+# Distinct Numbers
+
+# cook your dish here
+n=int(input())
+A=list(map(int,input().split()))
+q=int(input())
+while q>0:
+    i,j=map(int,input().split())
+    print(len(set(A[i:j+1])))
+    q-=1
