@@ -1,0 +1,13 @@
+# Even Splits
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    binary = input()
+    s = list(binary)
+    s.sort()
+    if len(s)>2:
+        print("".join(s))
+    else:
+        print(binary)
