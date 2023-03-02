@@ -1,0 +1,13 @@
+# Tanu and Head-bob
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    s = input()
+    if 'I' in s:
+        print('INDIAN')
+    elif 'Y' in s:
+        print('NOT INDIAN')
+    else:
+        print('NOT SURE')
