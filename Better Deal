@@ -1,0 +1,17 @@
+# Better Deal
+
+# cook your dish here
+import math
+cases = int(input())
+for _ in range(cases):
+    a,b = map(int,input().split())
+    price1 = 100
+    price2 = 200
+    x = math.ceil(price1 - (a/100) * price1)
+    y = math.ceil(price2 - (b/100) * price2)
+    if x<y:
+        print("FIRST")
+    if x>y:
+        print("SECOND")
+    if x == y:
+        print("BOTH")
