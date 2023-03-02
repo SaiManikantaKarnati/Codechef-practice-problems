@@ -1,0 +1,22 @@
+# Add smallest prime factor
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x,y = map(int,input().split())
+    time = 0
+    while(x < y):
+        if x%2 == 0:
+            if (y-x)%2 == 0:
+                time = time + (y-x)//2
+            else:
+                time = time + (y-x)//2 + 1
+            break
+        elif x%3 == 0:
+            x = x + 3
+        elif x%5 == 0:
+            x = x + 5
+        elif x%7 == 0:
+            x = x + 7
+        time = time + 1
+    print(time)
