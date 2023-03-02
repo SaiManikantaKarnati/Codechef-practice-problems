@@ -1,0 +1,7 @@
+# Ageing
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x = int(input())
+    print(x-10)
