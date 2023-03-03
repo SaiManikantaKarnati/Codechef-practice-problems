@@ -1,0 +1,11 @@
+# Maximum Length Even Subarray
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    ans = n*(n+1)/2
+    if ans%2 == 0:
+        print(n)
+    else:
+        print(n-1)
