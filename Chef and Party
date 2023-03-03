@@ -1,0 +1,14 @@
+# Chef and Party
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    arr = sorted(list(map(int,input().split())))
+    res = 0
+    for i in range(len(arr)):
+        if arr[i] == 0:
+            res = res + 1
+        elif res >= arr[i]:
+            res = res + 1
+    print(res)
