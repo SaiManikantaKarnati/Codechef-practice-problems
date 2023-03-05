@@ -1,0 +1,22 @@
+# Chef in Fantasy League
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n,s = map(int,input().split())
+    p = list(map(int,input().split()))
+    lst = list(map(int,input().split()))
+    forward = 100
+    defender = 100
+    for i in range(0,n):
+        if lst[i] == 0:
+            if p[i] < defender:
+                defender = p[i]
+        else:
+            if p[i] < forward:
+                forward = p[i]
+    if s+forward+defender <= 100:
+        print("yes")
+    else:
+        print('no')
+        
