@@ -1,0 +1,12 @@
+# Adjacent Sum Parity
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    n = int(input())
+    s = input()
+    c = s.count('1')
+    if(c%2 == 0):
+        print("YES")
+    else:
+        print("NO")
