@@ -1,0 +1,7 @@
+# Odd Pairs
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    print(n*n//2)
