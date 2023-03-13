@@ -1,0 +1,14 @@
+# Program Your Own CALCULATOR
+
+# cook your dish here
+n = int(input())
+m = int(input())
+s = input()
+if s == '/':
+    print(n/m)
+elif s == '+':
+    print(n+m)
+elif s == '*':
+    print(n*m)
+elif s == '-':
+    print(n-m)
