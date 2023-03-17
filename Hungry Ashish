@@ -1,0 +1,12 @@
+# Hungry Ashish
+
+# cook your dish here
+cases = int(input())
+for i in range(cases):
+    x,y,z = map(int,input().split())
+    if x >= y:
+        print("PIZZA")
+    elif x >= z:
+        print("BURGER")
+    else:
+        print("NOTHING")
