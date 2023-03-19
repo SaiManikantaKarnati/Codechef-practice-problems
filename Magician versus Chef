@@ -1,0 +1,13 @@
+# Magician versus Chef
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n,x,s = map(int,input().split())
+    for i in range(s):
+        a,b = map(int,input().split())
+        if x == a:
+            x = b
+        elif x == b:
+            x = a
+    print(x)        
