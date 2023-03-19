@@ -1,0 +1,11 @@
+# Food Chain
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    e,k = map(int,input().split())
+    count = 0
+    while(e > 0):
+        count = count + 1
+        e = e // k
+    print(count)
