@@ -1,0 +1,11 @@
+# Lost Weekends
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    a1, a2, a3, a4, a5, p = map(int,input().split())
+    x = a1 + a2 + a3 + a4 + a5
+    if(x*p <= 120):
+        print("No")
+    else:
+        print("Yes")
