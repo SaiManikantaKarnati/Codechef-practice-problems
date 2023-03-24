@@ -1,0 +1,9 @@
+# Friends Meetup
+
+cases = int(input())
+for _ in range(cases):
+    x1, x2 = map(int,input().split())
+    if x2<=x1:
+        print("Yes")
+    else:
+        print("No")
