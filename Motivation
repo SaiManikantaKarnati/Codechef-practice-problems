@@ -1,0 +1,13 @@
+# Motivation
+
+
+cases = int(input())
+for _ in range(cases):
+    n,x = map(int,input().split())
+    max_ = 0
+    for i in range(n):
+        s,r = map(int,input().split())
+        if s <= x:
+            if(r > max_):
+                max_ = r
+    print(max_)
