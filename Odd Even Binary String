@@ -1,0 +1,11 @@
+# Odd Even Binary String
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    b = list(map(int,input().split()))
+    if(n%2 == sum(b)%2):
+        print("Yes")
+    else:
+        print("No")
