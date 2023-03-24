@@ -4,7 +4,7 @@
 cases = int(input())
 for _ in range(cases):
     n, k = map(int,input().split())
-    if n%2==0 and not k:
-        print("Yes")
-    else:
+    if n%2 and not k:
         print("No")
+    else:
+        print("Yes")
