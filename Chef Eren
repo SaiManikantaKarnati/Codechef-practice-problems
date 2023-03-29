@@ -1,0 +1,14 @@
+# Chef Eren
+
+
+import math
+cases = int(input())
+for _ in range(cases):
+    n,a,b = map(int,input().split())
+    if n%2 == 0:
+        even = n//2
+        odd = n//2
+    else:
+        even = n//2
+        odd = n//2 + 1
+    print(even*a + odd*b)
