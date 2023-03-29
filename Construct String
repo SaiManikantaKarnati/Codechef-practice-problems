@@ -1,0 +1,13 @@
+# Construct String
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    u = input()
+    ans = ''
+    for char in u:
+        ans = ans + char
+        if len(ans)>=3 and ans[-3] == ans[-2] == ans[-1]:
+            ans = ans[:-2]
+    print(ans)
