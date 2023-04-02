@@ -1,0 +1,11 @@
+# Chef and Bored Games
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    n = int(input())
+    res = 0
+    while(n > 0):
+        res = res + n * n
+        n = n - 2
+    print(res)
