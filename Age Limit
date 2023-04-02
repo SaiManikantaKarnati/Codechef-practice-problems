@@ -1,0 +1,10 @@
+# Age Limit
+
+# cook your dish here
+cases = int(input())
+for _ in range(cases):
+    x,y,a = map(int,input().split())
+    if a>=x and y>a:
+        print("YES")
+    else:
+        print("NO")
